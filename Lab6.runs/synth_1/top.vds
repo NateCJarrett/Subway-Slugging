@@ -1,0 +1,619 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov 25 14:16:34 2025
+# Process ID: 14676
+# Current directory: C:/Users/Admin/Documents/Vivado/Lab6/Lab6.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Admin/Documents/Vivado/Lab6/Lab6.runs/synth_1/top.vds
+# Journal file: C:/Users/Admin/Documents/Vivado/Lab6/Lab6.runs/synth_1\vivado.jou
+# Running On: DESKTOP-C6BREKA, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 8322 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 452.055 ; gain = 184.684
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20204
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1290.906 ; gain = 440.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'T2_i', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/game_fsm.v:61]
+INFO: [Synth 8-11241] undeclared symbol 'T6_i', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/game_fsm.v:62]
+INFO: [Synth 8-11241] undeclared symbol 'n3', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab5/Lab5.srcs/sources_1/imports/Vivado/Lab3/Lab3.srcs/sources_1/imports/new/hex7seg.v:28]
+INFO: [Synth 8-11241] undeclared symbol 'n2', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab5/Lab5.srcs/sources_1/imports/Vivado/Lab3/Lab3.srcs/sources_1/imports/new/hex7seg.v:29]
+INFO: [Synth 8-11241] undeclared symbol 'n1', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab5/Lab5.srcs/sources_1/imports/Vivado/Lab3/Lab3.srcs/sources_1/imports/new/hex7seg.v:30]
+INFO: [Synth 8-11241] undeclared symbol 'n0', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab5/Lab5.srcs/sources_1/imports/Vivado/Lab3/Lab3.srcs/sources_1/imports/new/hex7seg.v:31]
+INFO: [Synth 8-11241] undeclared symbol 'rnd_init', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/lsfr.v:30]
+INFO: [Synth 8-11241] undeclared symbol 'crashed', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:59]
+INFO: [Synth 8-11241] undeclared symbol 'advance_val', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:188]
+INFO: [Synth 8-11241] undeclared symbol 'h_sync_n', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/sync.v:31]
+INFO: [Synth 8-11241] undeclared symbol 'v_sync_n', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/sync.v:32]
+INFO: [Synth 8-11241] undeclared symbol 't1_score_inc', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/track.v:69]
+INFO: [Synth 8-11241] undeclared symbol 't2_score_inc', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/track.v:86]
+WARNING: [Synth 8-8895] 't1_score_inc' is already implicitly declared on line 69 [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/track.v:89]
+WARNING: [Synth 8-8895] 't2_score_inc' is already implicitly declared on line 86 [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/track.v:89]
+INFO: [Synth 8-11241] undeclared symbol 'delay_reached', assumed default net type 'wire' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:72]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'labVGA_clks' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:55]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 36.500000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:55]
+INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:188]
+INFO: [Synth 8-6157] synthesizing module 'CB4CE_MXILINX_clkcntrl4' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:304]
+INFO: [Synth 8-6157] synthesizing module 'FTCE_MXILINX_clkcntrl4' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:274]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'XOR2' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:139043]
+INFO: [Synth 8-6155] done synthesizing module 'XOR2' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:139043]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40789]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40789]
+INFO: [Synth 8-6155] done synthesizing module 'FTCE_MXILINX_clkcntrl4' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:274]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:137428]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:137428]
+INFO: [Synth 8-6155] done synthesizing module 'CB4CE_MXILINX_clkcntrl4' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:304]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1897]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1897]
+INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:188]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:38]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133907]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133907]
+INFO: [Synth 8-6155] done synthesizing module 'labVGA_clks' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Downloads/labVGA_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/edge_detector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/edge_detector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_address' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:23]
+INFO: [Synth 8-6157] synthesizing module 'countUD16L' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/countUD16L.v:23]
+INFO: [Synth 8-6157] synthesizing module 'countUD4L' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/countUD4L.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4bit' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/mux4bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4bit' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/mux4bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AddSub4' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/AddSub4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Add4' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/Add4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fa' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/fa.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ha' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/ha.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ha' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/ha.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/fa.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Add4' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/Add4.v:23]
+WARNING: [Synth 8-7071] port 'cout_o' of module 'Add4' is unconnected for instance 'flip' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/AddSub4.v:39]
+WARNING: [Synth 8-7023] instance 'flip' of module 'Add4' has 5 connections declared, but only 4 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/AddSub4.v:39]
+WARNING: [Synth 8-7071] port 'cout_o' of module 'Add4' is unconnected for instance 'sum' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/AddSub4.v:41]
+WARNING: [Synth 8-7023] instance 'sum' of module 'Add4' has 5 connections declared, but only 4 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/AddSub4.v:41]
+WARNING: [Synth 8-7071] port 'cout_o' of module 'Add4' is unconnected for instance 'diff' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/AddSub4.v:42]
+WARNING: [Synth 8-7023] instance 'diff' of module 'Add4' has 5 connections declared, but only 4 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/AddSub4.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'AddSub4' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/AddSub4.v:23]
+WARNING: [Synth 8-7071] port 'ovfl_o' of module 'AddSub4' is unconnected for instance 'crement' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/countUD4L.v:48]
+WARNING: [Synth 8-7023] instance 'crement' of module 'AddSub4' has 5 connections declared, but only 4 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/countUD4L.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'countUD4L' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/countUD4L.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'countUD16L' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/countUD16L.v:23]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'columns' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:37]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'columns' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:37]
+WARNING: [Synth 8-7023] instance 'columns' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:37]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'rows' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:38]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'rows' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:38]
+WARNING: [Synth 8-7023] instance 'rows' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_address' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:23]
+WARNING: [Synth 8-7071] port 'Hsync_o' of module 'pixel_address' is unconnected for instance 'pixels' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:55]
+WARNING: [Synth 8-7071] port 'Vsync_o' of module 'pixel_address' is unconnected for instance 'pixels' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:55]
+WARNING: [Synth 8-7023] instance 'pixels' of module 'pixel_address' has 6 connections declared, but only 4 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:55]
+INFO: [Synth 8-6157] synthesizing module 'sync' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sync' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_selector' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'player' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/player.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'character_left' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/player.v:61]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'character_left' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/player.v:61]
+WARNING: [Synth 8-7023] instance 'character_left' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/player.v:61]
+INFO: [Synth 8-6157] synthesizing module 'player_fsm' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/player_fsm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'player_fsm' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/player_fsm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'player' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/player.v:23]
+INFO: [Synth 8-6157] synthesizing module 'energy_bar' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/energy_bar.v:23]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'energy_bar_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/energy_bar.v:45]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'energy_bar_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/energy_bar.v:45]
+WARNING: [Synth 8-7023] instance 'energy_bar_counter' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/energy_bar.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'energy_bar' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/energy_bar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_fsm' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/game_fsm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/timer.v:23]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'frame_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/timer.v:37]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'frame_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/timer.v:37]
+WARNING: [Synth 8-7023] instance 'frame_counter' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/timer.v:37]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'quarter_sec_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/timer.v:55]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'quarter_sec_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/timer.v:55]
+WARNING: [Synth 8-7023] instance 'quarter_sec_counter' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/timer.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/timer.v:23]
+WARNING: [Synth 8-7071] port 'qsec_o' of module 'timer' is unconnected for instance 'game_timer' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/game_fsm.v:57]
+WARNING: [Synth 8-7071] port 'hsec_o' of module 'timer' is unconnected for instance 'game_timer' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/game_fsm.v:57]
+WARNING: [Synth 8-7023] instance 'game_timer' of module 'timer' has 7 connections declared, but only 5 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/game_fsm.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'game_fsm' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/game_fsm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'track' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/track.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lsfr' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/lsfr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lsfr' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/new/lsfr.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'q_o' does not match port width (8) of module 'lsfr' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/track.v:45]
+INFO: [Synth 8-6157] synthesizing module 'train' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:23]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'delay_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:62]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'delay_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:62]
+WARNING: [Synth 8-7023] instance 'delay_counter' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:62]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'train_bottom' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:84]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'train_bottom' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:84]
+WARNING: [Synth 8-7023] instance 'train_bottom' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'train' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/train.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'track' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/track.v:23]
+WARNING: [Synth 8-7071] port 'T2_o' of module 'timer' is unconnected for instance 'game_timer' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:178]
+WARNING: [Synth 8-7071] port 'T6_o' of module 'timer' is unconnected for instance 'game_timer' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:178]
+WARNING: [Synth 8-7023] instance 'game_timer' of module 'timer' has 7 connections declared, but only 5 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:178]
+WARNING: [Synth 8-7071] port 'utc_o' of module 'countUD16L' is unconnected for instance 'score_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:197]
+WARNING: [Synth 8-7071] port 'dtc_o' of module 'countUD16L' is unconnected for instance 'score_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:197]
+WARNING: [Synth 8-7023] instance 'score_counter' of module 'countUD16L' has 8 connections declared, but only 6 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_selector' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'score_o' does not match port width (16) of module 'rgb_selector' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:84]
+WARNING: [Synth 8-7071] port 'sw' of module 'rgb_selector' is unconnected for instance 'rgb' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:71]
+WARNING: [Synth 8-7023] instance 'rgb' of module 'rgb_selector' has 15 connections declared, but only 14 given [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:71]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab5/Lab5.srcs/sources_1/imports/Vivado/Lab3/Lab3.srcs/sources_1/new/ring_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab5/Lab5.srcs/sources_1/imports/Vivado/Lab3/Lab3.srcs/sources_1/new/ring_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'selector' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'selector' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab5/Lab5.srcs/sources_1/imports/Vivado/Lab3/Lab3.srcs/sources_1/imports/new/hex7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/imports/Vivado/Lab5/Lab5.srcs/sources_1/imports/Vivado/Lab3/Lab3.srcs/sources_1/imports/new/hex7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3848] Net Hsync_o in module/entity pixel_address does not have driver. [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:27]
+WARNING: [Synth 8-3848] Net Vsync_o in module/entity pixel_address does not have driver. [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/pixel_address.v:28]
+WARNING: [Synth 8-3848] Net lives_o in module/entity rgb_selector does not have driver. [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/rgb_selector.v:38]
+WARNING: [Synth 8-3848] Net led in module/entity top does not have driver. [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/sources_1/new/top.v:37]
+WARNING: [Synth 8-3917] design top has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design top has port an[2] driven by constant 1
+WARNING: [Synth 8-7129] Port T_i[15] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[14] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[13] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[12] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[11] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[10] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[9] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[8] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[7] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port has_energy_i in module player_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lives_o[3] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lives_o[2] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lives_o[1] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lives_o[0] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Hsync_o in module pixel_address is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Vsync_o in module pixel_address is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dp in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1403.301 ; gain = 552.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1403.301 ; gain = 552.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1403.301 ; gain = 552.742
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1405.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/constrs_1/imports/Lab6/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/constrs_1/imports/Lab6/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Admin/Documents/Vivado/Lab6/Lab6.srcs/constrs_1/imports/Lab6/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1511.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  AND2 => LUT2: 12 instances
+  AND3 => LUT3: 6 instances
+  AND4 => LUT4: 6 instances
+  BUF => LUT1: 1 instance 
+  XOR2 => LUT2: 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1511.227 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 7     
+	   3 Input   16 Bit       Adders := 7     
+	   2 Input    7 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 336   
+	   4 Input      1 Bit         XORs := 9     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 168   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design top has port an[2] driven by constant 1
+WARNING: [Synth 8-7129] Port T_i[15] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[14] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[13] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[12] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[11] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[10] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[9] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[8] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[7] in module train is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[15] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[14] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[13] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[12] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[11] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[10] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[9] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[8] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[7] in module train__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[15] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[14] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[13] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[12] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[11] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[10] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[9] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[8] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port T_i[7] in module train__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port has_energy_i in module player is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lives_o[3] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lives_o[2] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lives_o[1] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lives_o[0] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module rgb_selector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module rgb_selector is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q0/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q1/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q2/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q3/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q0/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q1/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q2/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q3/I_36_35) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b8/b0_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b8/b1_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b8/b2_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b8/b3_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b12/b0_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b12/b1_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b12/b2_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b12/b3_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b16/b0_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b16/b1_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b16/b2_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (game_timer/frame_counter/b16/b3_ff) is unused and will be removed from module game_fsm.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b8/b3_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b0_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b1_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b2_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b3_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b0_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b1_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b2_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b3_ff) is unused and will be removed from module train__1.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b8/b3_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b0_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b1_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b2_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b3_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b0_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b1_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b2_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b3_ff) is unused and will be removed from module train__2.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b8/b3_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b0_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b1_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b2_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b12/b3_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b0_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b1_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b2_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (delay_counter/b16/b3_ff) is unused and will be removed from module train.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b8/b2_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b8/b3_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b12/b0_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b12/b1_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b12/b2_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b12/b3_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b16/b0_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b16/b1_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b16/b2_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (frame_counter/b16/b3_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_detector/curr_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_detector/prev_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b4/b0_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b4/b1_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b4/b2_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b4/b3_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b8/b0_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b8/b1_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b8/b2_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b8/b3_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b12/b0_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b12/b1_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b12/b2_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b12/b3_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b16/b0_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b16/b1_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b16/b2_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (quarter_sec_counter/b16/b3_ff) is unused and will be removed from module timer.
+WARNING: [Synth 8-3332] Sequential element (b12/b0_ff) is unused and will be removed from module countUD16L.
+WARNING: [Synth 8-3332] Sequential element (b12/b1_ff) is unused and will be removed from module countUD16L.
+WARNING: [Synth 8-3332] Sequential element (b12/b2_ff) is unused and will be removed from module countUD16L.
+WARNING: [Synth 8-3332] Sequential element (b12/b3_ff) is unused and will be removed from module countUD16L.
+WARNING: [Synth 8-3332] Sequential element (b16/b0_ff) is unused and will be removed from module countUD16L.
+WARNING: [Synth 8-3332] Sequential element (b16/b1_ff) is unused and will be removed from module countUD16L.
+WARNING: [Synth 8-3332] Sequential element (b16/b2_ff) is unused and will be removed from module countUD16L.
+WARNING: [Synth 8-3332] Sequential element (b16/b3_ff) is unused and will be removed from module countUD16L.
+WARNING: [Synth 8-3332] Sequential element (pixels/columns/b12/b3_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/columns/b16/b1_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/columns/b16/b2_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/columns/b16/b3_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/rows/b12/b2_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/rows/b12/b3_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/rows/b16/b1_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/rows/b16/b2_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/rows/b16/b3_ff) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (pixels/columns/b16/b0_ff) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pixels/rows/b16/b0_ff) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2       |     8|
+|2     |AND3       |     4|
+|3     |AND4       |     4|
+|4     |BUF        |     1|
+|5     |BUFG       |     3|
+|6     |CARRY4     |   123|
+|7     |LUT1       |    92|
+|8     |LUT2       |   288|
+|9     |LUT3       |   112|
+|10    |LUT4       |   245|
+|11    |LUT5       |   202|
+|12    |LUT6       |   193|
+|13    |MMCME2_ADV |     1|
+|14    |STARTUPE2  |     1|
+|15    |XOR2       |    16|
+|16    |FDCE       |    16|
+|17    |FDRE       |   433|
+|18    |IBUF       |     6|
+|19    |OBUF       |    25|
+|20    |OBUFT      |    16|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1511.227 ; gain = 660.668
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 178 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1511.227 ; gain = 552.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1511.227 ; gain = 660.668
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1511.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 158 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1511.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 4 instances
+  AND4 => LUT4: 4 instances
+  BUF => LUT1: 1 instance 
+  XOR2 => LUT2: 16 instances
+
+Synth Design complete | Checksum: faeea77c
+INFO: [Common 17-83] Releasing license: Synthesis
+121 Infos, 254 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 1511.227 ; gain = 1054.059
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1511.227 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Admin/Documents/Vivado/Lab6/Lab6.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 14:18:02 2025...

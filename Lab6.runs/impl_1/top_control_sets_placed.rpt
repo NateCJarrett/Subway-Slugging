@@ -1,0 +1,157 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Nov 25 14:19:01 2025
+| Host         : DESKTOP-C6BREKA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    79 |
+|    Minimum number of control sets                        |    79 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   350 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    79 |
+| >= 0 to < 4        |    19 |
+| >= 4 to < 6        |    52 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     3 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             101 |           32 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             343 |          140 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               6 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-----------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
+|         Clock Signal         |                             Enable Signal                             |                          Set/Reset Signal                         | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------+-----------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
+|  not_so_slow/slowclk/clk_out | rgb/track2/train1/delay_counter/b8/CO[0]                              | rgb/game_controller/game_timer/quarter_sec_counter/b16/two_tracks |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/game_timer/quarter_sec_counter/b16/track_3_unlock |                                                                   |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train2/delay_counter/b8/b2_ff_0[0]                         | frame_detector/start_i0_7                                         |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train2/delay_counter/b8/CO[0]                              | frame_detector/start_i0_6                                         |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train1/delay_counter/b8/CO[0]                              | rgb/track1/train2/train_bottom/b16/go_i0                          |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/game_timer/quarter_sec_counter/b16/two_tracks_0   |                                                                   |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/track_1_unlock                                    |                                                                   |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train1/train_bottom/b12/collision                          |                                                                   |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train2/delay_counter/b8/b2_ff_0[0]                         | frame_detector/start_i0                                           |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train1/delay_counter/b8/CO[0]                              | rgb/game_controller/game_timer/quarter_sec_counter/b16/one_track  |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | pixels/rows/b8/enabled_i                                              |                                                                   |                1 |              2 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_timer/frame_counter/b4/p_2_in                                |                                                                   |                1 |              2 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train2/delay_counter/b4/enabled_i                          |                                                                   |                1 |              3 |         3.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train2/delay_counter/b4/enabled_i                          |                                                                   |                1 |              3 |         3.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train1/delay_counter/b4/enabled_i                          |                                                                   |                2 |              3 |         1.50 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train1/delay_counter/b4/enabled_i                          |                                                                   |                1 |              3 |         3.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train2/delay_counter/b4/enabled_i                          |                                                                   |                1 |              3 |         3.00 |
+|  not_so_slow/slowclk/clk_out | pixels/columns/b8/enabled_i                                           |                                                                   |                2 |              3 |         1.50 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train1/delay_counter/b4/enabled_i                          |                                                                   |                2 |              3 |         1.50 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train1/train_bottom/b8/enabled_i                           |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train1/train_bottom/b12/enabled_i                          |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | pixels/columns/b4/enabled_i                                           |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | frame_detector/enabled_i_0                                            |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | frame_detector/enabled_i_5                                            |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | frame_detector/enabled_i_4                                            |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | frame_detector/enabled_i_1                                            |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | frame_detector/enabled_i_2                                            |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | frame_detector/enabled_i                                              |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_38/I_36_31_n_0                               |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_39/CEO                                       |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_40/CEO                                       |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_45/CEO                                       |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | pixels/rows/b4/enabled_i_0                                            |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | pixels/columns/b12/enabled_i                                          |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train2/train_bottom/b12/enabled_i                          |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train1/train_bottom/b12/enabled_i                          |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train1/train_bottom/b4/enabled_i                           |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train1/train_bottom/b4/enabled_i_0                         |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train1/train_bottom/b8/enabled_i                           |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | frame_detector/enabled_i_3                                            |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train1/train_bottom/b8/enabled_i                           |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/score_inc__0                                                      |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train2/train_bottom/b12/enabled_i                          |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train2/train_bottom/b4/enabled_i                           |                                                                   |                3 |              4 |         1.33 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train2/train_bottom/b4/enabled_i_0                         |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train2/train_bottom/b8/enabled_i                           |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/energy/energy_bar_counter/b12/enabled_i                           |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/energy/energy_bar_counter/b4/enabled_i                            |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/energy/energy_bar_counter/b8/enabled_i_0                          |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/energy/energy_bar_counter/b8/enabled_i                            |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/game_timer/quarter_sec_counter/b12/enabled_i      |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/game_timer/quarter_sec_counter/b4/enabled_i_0     |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/game_timer/quarter_sec_counter/b8/enabled_i       |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/game_timer/quarter_sec_detector/enabled_i         |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/player_character/character_left/b8/enabled_i_0                    |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train1/train_bottom/b4/enabled_i                           |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/player_character/character_left/b16/enabled_i                     |                                                                   |                4 |              4 |         1.00 |
+|  not_so_slow/slowclk/clk_out | rgb/player_character/character_left/b4/enabled_i                      |                                                                   |                3 |              4 |         1.33 |
+|  not_so_slow/slowclk/clk_out | rgb/score_counter/b4/p_2_in                                           |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train1/train_bottom/b4/enabled_i_0                         |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train1/train_bottom/b12/enabled_i                          |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/player_character/character_left/b8/enabled_i                      |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train2/train_bottom/b4/enabled_i_0                         |                                                                   |                3 |              4 |         1.33 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train2/train_bottom/b12/enabled_i                          |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train2/train_bottom/b4/enabled_i_0                         |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train2/train_bottom/b4/enabled_i                           |                                                                   |                3 |              4 |         1.33 |
+|  not_so_slow/slowclk/clk_out | rgb/track2/train2/train_bottom/b8/enabled_i                           |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train2/train_bottom/b4/enabled_i                           |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train2/train_bottom/b8/enabled_i                           |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train1/train_bottom/b4/enabled_i                           |                                                                   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | rgb/track3/train1/train_bottom/b4/enabled_i_0                         |                                                                   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/game_timer/quarter_sec_counter/b16/two_tracks     |                                                                   |                5 |             13 |         2.60 |
+|  not_so_slow/slowclk/clk_out | rgb/game_controller/game_timer/quarter_sec_counter/b16/one_track      |                                                                   |                5 |             13 |         2.60 |
+|  not_so_slow/slowclk/clk_out | rgb/track1/train2/train_bottom/b16/go_i0                              |                                                                   |                6 |             13 |         2.17 |
+|  not_so_slow/slowclk/clk_out | frame_detector/start_i0_7                                             |                                                                   |                4 |             14 |         3.50 |
+|  not_so_slow/slowclk/clk_out | frame_detector/start_i0                                               |                                                                   |                5 |             14 |         2.80 |
+|  not_so_slow/slowclk/clk_out | frame_detector/start_i0_6                                             |                                                                   |                6 |             14 |         2.33 |
+|  not_so_slow/slowclk/clk_out | frame_detector/frame                                                  |                                                                   |                6 |             25 |         4.17 |
+|  not_so_slow/slowclk/clk_out |                                                                       |                                                                   |               32 |            101 |         3.16 |
++------------------------------+-----------------------------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+--------------+
+
+
