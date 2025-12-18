@@ -5,5 +5,5 @@
 - The lab was written in structural verilog rather than behavioral   
 <p>
 Full writeup can be accessed below  
-[Lab 6 Writeup](/Lab-6-Writeup.pdf)
 </p>
+[Lab 6 Writeup](/Lab-6-Writeup.pdf)
