@@ -6,4 +6,5 @@
 <p>
 Full writeup can be accessed below  
 </p>
+
 [Lab 6 Writeup](/Lab-6-Writeup.pdf)
